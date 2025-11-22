@@ -22,5 +22,11 @@ namespace LAB4
             Bai1.Form1 f1 = new Bai1.Form1();
             f1.Show();
         }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            Bai2.Bai2 f2 = new Bai2.Bai2();
+            f2.Show();
+        }
     }
 }
