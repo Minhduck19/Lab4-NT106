@@ -1,3 +1,16 @@
+# Thư mục cache và cấu hình nội bộ của Visual Studio (Gây lỗi Permission Denied)
+.vs/
+
+# Thư mục chứa các file đầu ra biên dịch (Binaries)
+[Bb]in/
+[Oo]bj/
+
+# Các file do Visual Studio và VS Code tạo ra
+*.pdb
+*.obj
+*.exe
+*.dll
+.vscode/
 # Prerequisites
 *.d
 
