@@ -4,16 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D28D5150-465A-40A1-A69C-979666510C13}</ProjectGuid>
+    <ProjectGuid>{71D7D71A-4F91-4572-AD06-63C5AA560880}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>LAB4</RootNamespace>
-    <AssemblyName>LAB4</AssemblyName>
+    <RootNamespace>Bai6</RootNamespace>
+    <AssemblyName>Bai6</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,22 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
-      <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
-    </Reference>
-    <Reference Include="HtmlAgilityPack, Version=1.12.4.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <HintPath>packages\HtmlAgilityPack.1.12.4\lib\Net45\HtmlAgilityPack.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.3595.46, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Web.WebView2.1.0.3595.46\lib\net462\Microsoft.Web.WebView2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.3595.46, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Web.WebView2.1.0.3595.46\lib\net462\Microsoft.Web.WebView2.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.3595.46, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Web.WebView2.1.0.3595.46\lib\net462\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+      <HintPath>..\LAB4\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\LAB4\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -69,17 +55,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="UserApiService.cs" />
+    <Compile Include="UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoModel.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -103,34 +88,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Bai1\Bai1.csproj">
-      <Project>{934059fe-e5fd-46fc-a51a-04fdc7592822}</Project>
-      <Name>Bai1</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Bai2\Bai2.csproj">
-      <Project>{441b0fb1-d2d0-4b22-b80b-95bc734a5f69}</Project>
-      <Name>Bai2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Bai3\Bai3.csproj">
-      <Project>{4a67ab31-afea-4b60-85b9-5f71bc9f0347}</Project>
-      <Name>Bai3</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Bai5\Bai5.csproj">
-      <Project>{8da01b76-7187-4fd3-ada5-996da03c449d}</Project>
-      <Name>Bai5</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Bai6\Bai6.csproj">
-      <Project>{71d7d71a-4f91-4572-ad06-63c5aa560880}</Project>
-      <Name>Bai6</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="packages\Microsoft.Web.WebView2.1.0.3595.46\build\Microsoft.Web.WebView2.targets" Condition="Exists('packages\Microsoft.Web.WebView2.1.0.3595.46\build\Microsoft.Web.WebView2.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('packages\Microsoft.Web.WebView2.1.0.3595.46\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Web.WebView2.1.0.3595.46\build\Microsoft.Web.WebView2.targets'))" />
-  </Target>
 </Project>

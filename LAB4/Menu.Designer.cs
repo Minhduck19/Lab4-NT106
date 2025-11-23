@@ -132,6 +132,7 @@
             this.btn6.Size = new System.Drawing.Size(220, 60);
             this.btn6.TabIndex = 5;
             this.btn6.Text = "Project 6";
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn7
             // 
