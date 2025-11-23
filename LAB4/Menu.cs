@@ -20,7 +20,7 @@ namespace LAB4
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            Bai1.Form1 f1 = new Bai1.Form1();
+            Bai1.Formm f1 = new Bai1.Formm();
             f1.Show();
         }
 
