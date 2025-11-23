@@ -1,5 +1,4 @@
-﻿using Bai3;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +19,7 @@ namespace LAB4
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            Bai1.Formm f1 = new Bai1.Formm();
+           Bai1.Formm f1 = new Bai1.Formm();
             f1.Show();
         }
 
