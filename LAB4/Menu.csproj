@@ -116,6 +116,10 @@
       <Project>{4a67ab31-afea-4b60-85b9-5f71bc9f0347}</Project>
       <Name>Bai3</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Bai4\Bai4.csproj">
+      <Project>{5a802979-e88d-4eb9-857b-ef6bf5ad72ed}</Project>
+      <Name>Bai4</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Bai5\Bai5.csproj">
       <Project>{8da01b76-7187-4fd3-ada5-996da03c449d}</Project>
       <Name>Bai5</Name>

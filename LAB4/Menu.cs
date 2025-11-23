@@ -40,5 +40,11 @@ namespace LAB4
             Bai3.Form1 f3 = new Bai3.Form1();
             f3.Show();
         }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            Bai4.Form1 f4 = new Bai4.Form1();
+            f4.Show();
+        }
     }
 }
