@@ -40,5 +40,11 @@ namespace LAB4
             Bai3.Form1 f3 = new Bai3.Form1();
             f3.Show();
         }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            Bai6.UserInfo f6 = new Bai6.UserInfo();
+            f6.Show();
+        }
     }
 }
