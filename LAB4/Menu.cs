@@ -51,5 +51,11 @@ namespace LAB4
             Bai6.UserInfo f6 = new Bai6.UserInfo();
             f6.Show();
         }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            Bai7.LoginForm f7 = new Bai7.LoginForm();
+            f7.Show();
+        }
     }
 }

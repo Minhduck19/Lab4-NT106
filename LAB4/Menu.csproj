@@ -130,6 +130,10 @@
       <Project>{71d7d71a-4f91-4572-ad06-63c5aa560880}</Project>
       <Name>Bai6</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Bai7\Bai7.csproj">
+      <Project>{968c1335-398f-46ef-b159-4d2362e58940}</Project>
+      <Name>Bai7</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Web.WebView2.1.0.3595.46\build\Microsoft.Web.WebView2.targets" Condition="Exists('packages\Microsoft.Web.WebView2.1.0.3595.46\build\Microsoft.Web.WebView2.targets')" />

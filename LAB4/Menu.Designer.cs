@@ -41,7 +41,7 @@
             this.btn1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btn1.ForeColor = System.Drawing.Color.White;
             this.btn1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.btn1.Location = new System.Drawing.Point(50, 50);
+            this.btn1.Location = new System.Drawing.Point(412, 91);
             this.btn1.Name = "btn1";
             this.btn1.ShadowDecoration.Depth = 10;
             this.btn1.ShadowDecoration.Enabled = true;
@@ -58,7 +58,7 @@
             this.btn2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btn2.ForeColor = System.Drawing.Color.White;
             this.btn2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btn2.Location = new System.Drawing.Point(300, 50);
+            this.btn2.Location = new System.Drawing.Point(662, 91);
             this.btn2.Name = "btn2";
             this.btn2.ShadowDecoration.Depth = 10;
             this.btn2.ShadowDecoration.Enabled = true;
@@ -75,7 +75,7 @@
             this.btn3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btn3.ForeColor = System.Drawing.Color.White;
             this.btn3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
-            this.btn3.Location = new System.Drawing.Point(50, 130);
+            this.btn3.Location = new System.Drawing.Point(412, 171);
             this.btn3.Name = "btn3";
             this.btn3.ShadowDecoration.Depth = 10;
             this.btn3.ShadowDecoration.Enabled = true;
@@ -92,7 +92,7 @@
             this.btn4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btn4.ForeColor = System.Drawing.Color.White;
             this.btn4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(68)))), ((int)(((byte)(173)))));
-            this.btn4.Location = new System.Drawing.Point(300, 130);
+            this.btn4.Location = new System.Drawing.Point(662, 171);
             this.btn4.Name = "btn4";
             this.btn4.ShadowDecoration.Depth = 10;
             this.btn4.ShadowDecoration.Enabled = true;
@@ -109,7 +109,7 @@
             this.btn5.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btn5.ForeColor = System.Drawing.Color.White;
             this.btn5.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(156)))), ((int)(((byte)(18)))));
-            this.btn5.Location = new System.Drawing.Point(50, 210);
+            this.btn5.Location = new System.Drawing.Point(412, 251);
             this.btn5.Name = "btn5";
             this.btn5.ShadowDecoration.Depth = 10;
             this.btn5.ShadowDecoration.Enabled = true;
@@ -126,7 +126,7 @@
             this.btn6.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btn6.ForeColor = System.Drawing.Color.White;
             this.btn6.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
-            this.btn6.Location = new System.Drawing.Point(300, 210);
+            this.btn6.Location = new System.Drawing.Point(662, 251);
             this.btn6.Name = "btn6";
             this.btn6.ShadowDecoration.Depth = 10;
             this.btn6.ShadowDecoration.Enabled = true;
@@ -143,13 +143,14 @@
             this.btn7.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btn7.ForeColor = System.Drawing.Color.White;
             this.btn7.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
-            this.btn7.Location = new System.Drawing.Point(175, 290);
+            this.btn7.Location = new System.Drawing.Point(412, 327);
             this.btn7.Name = "btn7";
             this.btn7.ShadowDecoration.Depth = 10;
             this.btn7.ShadowDecoration.Enabled = true;
             this.btn7.Size = new System.Drawing.Size(220, 60);
             this.btn7.TabIndex = 6;
             this.btn7.Text = "Project 7";
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // Menu
             // 
