@@ -152,7 +152,7 @@
             // Menu
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(600, 400);
+            this.ClientSize = new System.Drawing.Size(1290, 630);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn3);
