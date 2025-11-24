@@ -50,5 +50,10 @@ namespace Bai1
 
             return responseFromServer;
         }
+
+        private void rtbHtml_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
