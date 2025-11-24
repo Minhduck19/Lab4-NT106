@@ -107,6 +107,10 @@ namespace Bai4
                 flpMovies.Controls.Add(p);
             }
         }
-        
+
+        private void flpMovies_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }   
 }

@@ -123,15 +123,24 @@ namespace Bai7
         private void btnRandom_Click(object sender, EventArgs e)
         {
             var list = DataProvider.GetFoods();
+            if (!isShowAll)
+            {
+                list = list.Where(x => x.CreatedBy == DataProvider.CurrentUser.Username).ToList();
+            }
             if (list.Count > 0)
             {
                 Random rnd = new Random();
                 var randomFood = list[rnd.Next(list.Count)];
-                MessageBox.Show($"Hôm nay ăn món:\n\n{randomFood.Name}\nGiá: {randomFood.Price}", "Gợi ý cho bạn");
+                string title = isShowAll ? "Gợi ý cho bạn" : "Món ngon của bạn";
+
+                MessageBox.Show($"Hôm nay ăn món:\n\n{randomFood.Name}\nGiá: {randomFood.Price}", title);
             }
             else
             {
-                MessageBox.Show("Chưa có món nào để random cả!");
+                if (!isShowAll)
+                    MessageBox.Show("Bạn chưa đóng góp món nào nên không thể random!");
+                else
+                    MessageBox.Show("Chưa có dữ liệu món ăn nào!");
             }
         }
     }
