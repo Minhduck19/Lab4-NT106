@@ -57,6 +57,16 @@ namespace Bai_Test
             }
         }
 
+        private void NhanDuLieu()
+        {
+            while (true)
+            {
+                byte[] buffer = new byte[1024];
+                int count = stream.Read(buffer, 0, buffer.Length);
+                string msg = Encoding.UTF8.GetString(buffer, 0, count);
+            }
+        }
+
         private void btnOrder_Click(object sender, EventArgs e)
         {
             try
