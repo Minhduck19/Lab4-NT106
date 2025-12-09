@@ -45,6 +45,7 @@ namespace Bai_Test
                 stream.Write(data, 0, data.Length);
 
                 MessageBox.Show("Đã kết nối đến máy chủ.\n");
+                TrangThai.Text = "Connect";
 
                 // Bắt đầu thread nhận dữ liệu
                 receiveThread = new Thread(NhanDuLieu);
@@ -56,6 +57,8 @@ namespace Bai_Test
                 MessageBox.Show("Lỗi kết nối: " + ex.Message + "\n");
             }
         }
+
+        private void NhanDuLieu() { }
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
@@ -95,6 +98,7 @@ namespace Bai_Test
 
         private void Client_Load(object sender, EventArgs e)
         {
+            TrangThai.Text = "DisConnect";
             // Tạo bảng món ăn
             DataTable dataTable = new DataTable();
             dataTable.Columns.Add("Ten mon", typeof(string));
