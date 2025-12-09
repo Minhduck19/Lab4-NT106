@@ -47,6 +47,7 @@
             this.btnConnectSever.TabIndex = 0;
             this.btnConnectSever.Text = "Connect";
             this.btnConnectSever.UseVisualStyleBackColor = true;
+            this.btnConnectSever.Click += new System.EventHandler(this.btnConnectSever_Click_1);
             // 
             // TrangThai
             // 
@@ -88,6 +89,7 @@
             this.btnOrder.TabIndex = 5;
             this.btnOrder.Text = "Order";
             this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click_1);
             // 
             // btnQuit
             // 
@@ -97,6 +99,7 @@
             this.btnQuit.TabIndex = 6;
             this.btnQuit.Text = "Quit";
             this.btnQuit.UseVisualStyleBackColor = true;
+            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click_1);
             // 
             // Client
             // 
