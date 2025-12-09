@@ -47,6 +47,7 @@
             this.btnConnectSever.TabIndex = 0;
             this.btnConnectSever.Text = "Connect";
             this.btnConnectSever.UseVisualStyleBackColor = true;
+            this.btnConnectSever.Click += new System.EventHandler(this.btnConnectSever_Click);
             // 
             // TrangThai
             // 
@@ -64,6 +65,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(720, 255);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label2
             // 
@@ -88,6 +90,7 @@
             this.btnOrder.TabIndex = 5;
             this.btnOrder.Text = "Order";
             this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btnQuit
             // 
@@ -97,6 +100,7 @@
             this.btnQuit.TabIndex = 6;
             this.btnQuit.Text = "Quit";
             this.btnQuit.UseVisualStyleBackColor = true;
+            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
             // Client
             // 
@@ -112,6 +116,7 @@
             this.Controls.Add(this.btnConnectSever);
             this.Name = "Client";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Client_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
