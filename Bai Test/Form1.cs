@@ -16,5 +16,17 @@ namespace Bai_Test
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Sever tmp = new Sever();
+            tmp.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Client tmp = new Client();
+            tmp.Show();
+        }
     }
 }
