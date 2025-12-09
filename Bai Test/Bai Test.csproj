@@ -66,6 +66,9 @@
     <Compile Include="Sever.Designer.cs">
       <DependentUpon>Sever.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +81,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Sever.resx">
+      <DependentUpon>Sever.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
