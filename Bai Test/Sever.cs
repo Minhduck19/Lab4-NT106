@@ -188,27 +188,7 @@ namespace Bai_Test
 
         
 
-        void SendInvoiceToClient(string clientId, string invoiceContent)
-        {
-            try
-            {
-                if (clientStreams.ContainsKey(clientId) && clientStreams[clientId] != null && clientStreams[clientId].CanWrite)
-                {
-                    byte[] invoiceBytes = Encoding.UTF8.GetBytes(invoiceContent);
-                    clientStreams[clientId].Write(invoiceBytes, 0, invoiceBytes.Length);
-                    clientStreams[clientId].Flush();
-                    LogMessage($"Hoá đơn đã được gửi đến client {clientId}");
-                }
-                else
-                {
-                    LogMessage($"Không thể gửi hoá đơn đến client {clientId} - Client không kết nối");
-                }
-            }
-            catch (Exception ex)
-            {
-                LogMessage($"Lỗi gửi hoá đơn: {ex.Message}");
-            }
-        }
+        
 
 
 
